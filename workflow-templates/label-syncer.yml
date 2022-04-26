@@ -1,9 +1,9 @@
 name: Sync labels
 on:
   pull_request:
+    branches: [ $default-branch ]
   push:
-    branches:
-      - main
+    branches: [ $default-branch ]
     paths:
       - '../labels.yml'
 jobs:
