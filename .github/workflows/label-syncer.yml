@@ -7,7 +7,7 @@ on:
     paths:
       - '../labels.yml'
 jobs:
-  build:
+  lables:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
