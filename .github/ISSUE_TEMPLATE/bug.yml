@@ -6,14 +6,10 @@ assignees: [""]
 
 body:
 
-  - type: markdown
-    attributes:
-      value: '# 🐞 **Problem**'
-
   - type: checkboxes
     id: new-bug
     attributes:
-      label: Before submiting the issue
+      label: '🔍 Before submiting the issue'
       description: Please, make sure the following conditions are met
       options:
       - label: I have searched the existing issues
@@ -24,7 +20,7 @@ body:
   - type: textarea
     id: bug-description
     attributes:
-      label: Description of the bug
+      label: '🐞 Description of the bug'
       placeholder: Describe what bug you encountered and what should have happened
     validations:
       required: true
@@ -32,19 +28,15 @@ body:
   - type: textarea
     id: steps-to-reproduce
     attributes:
-      label: Steps To Reproduce
+      label: '📝 Steps To Reproduce'
       placeholder: Please write the steps in a list form
     validations:
       required: true
 
-  - type: markdown
-    attributes:
-      value: '# 🖥️ **System Information**'
-
   - type: dropdown
     id: os-name
     attributes:
-      label: Which Operative System are you using?
+      label: '💻 Which Operating System are you using?'
       multiple: false
       options:
        - 'Windows'
@@ -56,7 +48,7 @@ body:
   - type: dropdown
     id: python-version
     attributes:
-      label: Which Python version are you using?
+      label: '🐍 Which Python version are you using?'
       description: Run `python --version` to verify your Python version
       multiple: false
       options:
@@ -70,7 +62,8 @@ body:
   - type: textarea
     id: installed-packages
     attributes:
-      label: Installed packages
+      label: '📦 Installed packages'
       placeholder: Paste here the output of `python -m pip freeze`
+      render: shell
     validations:
       required: true
