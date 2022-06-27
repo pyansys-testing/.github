@@ -6,38 +6,25 @@ assignees: [""]
 
 body:
 
-  - type: markdown
-    attributes:
-      value: '# 📝 **New Feature**'
-
   - type: textarea
     id: feature-description
     attributes:
-      label: Description of the feature
+      label: '📝 Description of the feature'
       placeholder: Describe what feature you devised and why it is useful for the project
     validations:
       required: true
 
-  - type: markdown
-    attributes:
-      value: '# 💡 **Implementation**'
-
   - type: textarea
     id: implementation-description
     attributes:
-      label: Steps for implementing the feature
-      placeholder: Describe how this new feature can be implemented
+      label: '💡 Steps for implementing the feature'
+      placeholder: Describe how this new feature can be implemented...
     validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: '# 🔗 **References**'
+      required: false
 
   - type: textarea
     id: references
     attributes:
-      label: Useful links and references
-      placeholder: A list of links and references to help when implementing the feature
+      label: '🔗 Links and references'
     validations:
       required: false
