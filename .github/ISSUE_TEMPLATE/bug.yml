@@ -28,7 +28,7 @@ body:
   - type: textarea
     id: steps-to-reproduce
     attributes:
-      label: '📝 Steps To Reproduce'
+      label: ':memo: Steps To Reproduce'
       placeholder: Please write the steps in a list form
     validations:
       required: true
